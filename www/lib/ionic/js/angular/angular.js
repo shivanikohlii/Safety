@@ -30712,3 +30712,38 @@ $provide.value("$locale", {
 })(window, document);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
+angular
+.module('demoApp', ['mobiscroll-image'])
+.controller('demoController', ['$scope', function ($scope) {
+
+    $scope.data = [{
+        name: '1',
+        imgsrc: 'ben.png'
+    }, {
+        name: '2',
+        imgsrc: 'adam.jpg'
+    }, {
+        name: '3',
+        imgsrc: 'ionic.png'
+    }, {
+        name: '4',
+        imgsrc: 'max.png'
+    }, {
+        name: '5',
+        imgsrc: 'mike.png'
+    }, {
+        name: '6',
+        imgsrc: 'perry.png'
+    }, ];
+
+    $scope.settings = {
+        theme: 'ios',
+        display: 'bottom',
+        cssClass: 'mbsc-sc md-image-fruit',
+        labels: ['Select Favorite Fruit'],
+        placeholder: 'Please Select...',
+        width: 200,
+        enhance: true
+    };
+
+}]);

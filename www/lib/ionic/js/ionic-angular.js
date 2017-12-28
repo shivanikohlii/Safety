@@ -12,6 +12,7 @@
  *
  */
 
+
 (function() {
 /* eslint no-unused-vars:0 */
 var IonicModule = angular.module('ionic', ['ngAnimate', 'ngSanitize', 'ui.router', 'ngIOS9UIWebViewPatch']),

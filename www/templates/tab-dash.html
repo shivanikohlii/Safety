@@ -16,19 +16,15 @@
   </ion-content>
 </ion-view>-->
 <ion-view view-title="Home">
-  <div class="list">
-   <div class="item item-input-inset">
-      <label class="item item-input-wrapper">		
-      <input type="text" placeholder="Placeholder 1">
-      </label>
-      <button class="button">button</button>
-   </div>
+  <ion-content>
+   <p> क्या आपको कोई परेशान कर रहा हैं, बताएं, कौन और कैसे ? <br>
+    Tell us how you are being harrassed ? </p>
+  <ul mobiscroll-image="settings" mobiscroll-instance="demo" ng-model="selected" >
+    <li ng-repeat="item in data" data-val="{{item.name}}">
+        <img ng-src="/www/img/{{item.imgsrc}}" />
+    </li>
+</ul>
 
-   <div class="item item-input-inset">
-      <label class="item item-input-wrapper">
-      <i class="icon ion-edit placeholder-icon"></i>
-      <input type="text" placeholder="Placeholder 2">
-      </label>
-   </div>
 </div>
-  </ion-content></ion-view>
+</ion-content>
+</ion-view>
